@@ -1,36 +1,322 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- Always include this line of code!!! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    
     <title>My Portfolio</title>
 </head>
-
 <body>
-    <h1>GAiXz Portfolio</h1>
-    <h2>I'm a Web Developer</h2>
-<hr />
-    <h3><a href="./public/movie-ranking.html">Moview Ranking Project</a></h3>
-    <img src="./assets/images/movie-ranking.png" height="200" alt="My top 3 movies" />
-    <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-    <img src="./assets/images/birthday-invite.png" height="200" alt="Birthday Invitation" />
-<hr />
-    <a href="./public/about.html">About Me</a>
-    <a href="./public/contact.html">Contact Me</a>
+    
+    <!-- HEADER and NAVIGATION -->
+    <header class="header">
+        <a href="#">
+          
+          <img class="logo" alt="G My Portfolio Logo" src="img/GLogo.png" />
+           <!-- <p>My Portfolio</p> -->
+        </a>
+  
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li><a class="main-nav-link" href="#">About Me</a></li>
+            <li><a class="main-nav-link" href="#">Services</a></li>
+            <li><a class="main-nav-link" href="#">Projects</a></li>
+            <li><a class="main-nav-link" href="#">Contact Me</a></li>
+            <li><a class="main-nav-link nav-cta" href="https://drive.google.com/file/d/1Iz17BlVcvUaZwbNIZPVMcWOGPrhyoIij/view?usp=sharing" target="_blank">Download CV</a></li>
+          </ul>
+        </nav>
+  
+        <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </header>
+    <!-- HEADER and NAVIGATION -->
+<main>
+  <!-- HERO SECTION -->
+  <section class="section-hero">
+
+    <div class="hero">
+      <div class="hero-text-box">
+        <p class="intro-text">Hello! I'm </p>
+        <h1 class="heading-primary">
+          GALILEO C. ALCANSADO
+        </h1>
+        <p class="hero-description">
+          I am a Graphic Designer with a strong background in digital and visual design.
+          I have experience creating branding materials, marketing collateral, and multimedia content for various industries.
+          My journey started with a Bachelor of Science in Information Technology from Pamantasan ng Lungsod ng Muntinlupa,
+          and I later expanded my expertise through certifications in Visual Graphic Design and Web Development.
+        </p>
+        
+        <!-- <a href="#" class="btn btn--full margin-right-sm"
+          >Start eating well</a
+        >
+        <a href="#" class="btn btn--outline">Learn more &darr;</a> -->
+
+        <div class="social-media">
+          <div class="socmed-icons">
+            <img src="img/linkedin-icon.png" alt="Social Media Icon" href="#" />
+            <img src="img/facebook-icon.png" alt="Social Media Icon" />
+            <img src="img/instagram-icon.png" alt="Social Media Icon" />
+            <img src="img/behance-icon.png" alt="Social Media Icon" />
+            <img src="img/dribble-icon.png" alt="Social Media Icon" />
+            <img src="img/wordpress-icon.png" alt="Social Media Icon" />
+            <img src="img/github-icon.png" alt="Social Media Icon" />
+          </div>
+          <p class="delivered-text">
+            <span>Follow</span> me!
+          </p>
+        </div>
+      </div>
+      <div class="hero-img-box">
+        <img
+          src="img/Profile Picture 1.png"
+          class="hero-img"
+          alt="My Profile Picture"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+
+  <section class="section-skills">
+    <div class="container">
+      <h2 class="heading-skills-in">My Skills</h2>
+      <div class="sofware-logos">
+        <img src="img/adobe-icon.png" alt="Adobe logo" />
+        <img
+          src="img/photoshop-icon.png"
+          alt="Photoshop logo"
+        />
+        <img
+          src="img/illustrator-icon.png"
+          alt="Illustrator logo"
+        />
+        <img src="img/indesign-icon.png" alt="Indesign logo" />
+        <img src="img/premierpro-icon.png" alt="Primier Pro logo" />
+        <img src="img/figma-icon.png" alt="Figma logo" />
+        <img src="img/canva-icon.png" alt="Canva logo" />
+      </div>
+    </div>
+  </section>
+
+<!-- WORK EXPERIENCE -->
+
+  <section class="work-experience">
+    <div class="container">
+      <p class="work-exp">My Graphic Design Work Experience</p>
+      <!-- <h2 class="heading-secondary">
+        Your daily dose of health in 3 simple steps
+      </h2> -->
+    
+
+    <div class="job">
+      <h3>
+        <img src="img/GLogo.png" alt="GLogo Logo" class="work-logo"> Freelance Graphic Designer
+          <p class="date">Nov 2019 - Present</p>
+      </h3>
+      <p>Delivered custom design solutions for various clients, enhancing brand identity.</p>
+  </div>
+
+  <div class="job">
+      <h3>
+        <img src="img/fhi360-logo.jpg" alt="fhi360 Logo" class="work-logo"> Jr. Graphic Designer at FHI360
+          <p class="date">Oct 2021 - Mar 2024</p>
+      </h3>
+      <p>Producing creatives for various communication products and tools for the #TBFreePH
+        communication campaign based on a pre-determined creative brief. Designing primarily
+        digital and print materials coordinated by technical team leads and staff members for
+        content and accurate information and providing production specifications to vendors and
+        suppliers.
+      </p>
+  </div>
+
+  <div class="job">
+      <h3>
+        <img src="img/Unique-Water-Logo.png" alt="uniquewater Logo" class="work-logo"> In-house Graphic Designer at Unique Water
+          <p class="date">Dec 2020 - May 2021</p>
+      </h3>
+      <p>Creating new design themes for marketing and collateral materials. Collaborated with a
+        creative team to design and produce a digital marketing campaign for its online presence.
+        Participated in the production of print and promotional items for key clients under the
+        direction of the Marketing Department. And perform other tasks, duties, and projects
+        assigned. Kindly check the link for more info regarding the design I made.</p>
+  </div>
+
+</div>
+  </section>
+
+  <!-- MY PROJECTS -->
+
+  <section class="my-projects">
+    <div class="container">
+      <p class="personal-proj">My Personal and Work Related Projects</p>
+      <!-- <span class="subheading">My Personal and Work Related Projects</span>
+      <h2 class="heading-secondary">
+        My Personal and Work Related Projects
+      </h2> -->
+    </div>
+
+    <div class="container grid grid--2-cols grid--center-v">
+      
+      <!-- STEP 01 -->
+      <div class="step-text-box">
+        <p class="proj-number">01</p>
+        <h3 class="heading-tertiary">
+          Social Media Post
+        </h3>
+        <p class="proj-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Tenetur quo odio veritatis! Blanditiis distinctio architecto aliquam labore, expedita vel laudantium perferendis sequi necessitatibus tenetur recusandae quos culpa id eos ea.
+        </p>
+      </div>
+
+      <div class="proj-img-box slider">
+              <img id="slide-1" src="img/socMed/socMed-1.png" class="proj-img" alt="social media posting"/>
+              <img id="slide-2" src="img/socMed/socMed-2.png" class="proj-img" alt="social media posting"/>
+              <img id="slide-3" src="img/socMed/socMed-3.png" class="proj-img" alt="social media posting"/>
+        
+              <!-- <div class="slider-wrapper">
+            <div class="slider">
+              
+            </div>
+            
+        </div>    -->
+        <!-- <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div> -->
+      </div>
+      
+
+      <!-- STEP 02 -->
+      <div class="step-text-box">
+        <p class="proj-number">02</p>
+        <h3 class="heading-tertiary">
+          Print Materials Design
+        </h3>
+        <p class="proj-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Tenetur quo odio veritatis! Blanditiis distinctio architecto aliquam labore, expedita vel laudantium perferendis sequi necessitatibus tenetur recusandae quos culpa id eos ea.
+        </p>
+      </div>
+
+      <div class="proj-img-box slider">         
+            <img id="slide-1" src="img/printMat/printMat-1.png" class="proj-img" alt="social media posting"/>
+            <img id="slide-2" src="img/printMat/printMat-2.png" class="proj-img" alt="social media posting"/>
+            <img id="slide-3" src="img/printMat/printMat-3.png" class="proj-img" alt="social media posting"/>     
+      </div>
+
+      <!-- STEP 03 -->
+      <div class="step-text-box">
+        <p class="proj-number">03</p>
+        <h3 class="heading-tertiary">
+          E-Commerce Product Design
+        </h3>
+        <p class="proj-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Tenetur quo odio veritatis! Blanditiis distinctio architecto aliquam labore, expedita vel laudantium perferendis sequi necessitatibus tenetur recusandae quos culpa id eos ea.
+        </p>
+      </div>
+
+      <div class="proj-img-box slider">
+            <img id="slide-1" src="img/eCom/eCom-1.png" class="proj-img" alt="social media posting"/>
+            <img id="slide-2" src="img/eCom/eCom-2.png" class="proj-img" alt="social media posting"/>
+            <img id="slide-3" src="img/eCom/eCom-3.png" class="proj-img" alt="social media posting"/>
+      </div>
+
+      <!-- STEP 04 -->
+    <div class="step-text-box">
+      <p class="proj-number">04</p>
+      <h3 class="heading-tertiary">
+        Logo Design
+      </h3>
+      <p class="proj-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Tenetur quo odio veritatis! Blanditiis distinctio architecto aliquam labore, expedita vel laudantium perferendis sequi necessitatibus tenetur recusandae quos culpa id eos ea.
+      </p>
+    </div>
+
+    <div class="proj-img-box slider">
+          <img id="slide-1" src="img/logoDes/logoDes-1.png" class="proj-img" alt="social media posting"/>
+          <img id="slide-2" src="img/logoDes/logoDes-2.png" class="proj-img" alt="social media posting"/>
+          <img id="slide-3" src="img/logoDes/logoDes-3.png" class="proj-img" alt="social media posting"/>
+    </div>
+
+    </div>    
+  </section>
+
+
+
+  <!-- CONTACT ME -->
+
+  <section class="contact-me">
+  <div class="container">
+    <div class="contact-area">
+    <div class="contact-form">
+        <input type="text" placeholder="Your name">
+        <input type="email" placeholder="Email">
+        <!-- <input type="text" placeholder="Your website (If exists)"> -->
+        <textarea placeholder="How can I help?*"></textarea>
+        <button>Get In Touch</button>
+        <!-- <div class="social-icons">
+            <a href="#">&#xf09a;</a>  
+            <a href="#">&#xf099;</a>  
+            <a href="#">&#xf16c;</a>  
+            <a href="#">&#xf392;</a>  
+        </div> -->
+    </div>
+    <div class="contact-info">
+        <h2>Let’s <strong>talk</strong> for <br><strong>Something special</strong></h2>
+        <p>I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences.</p>
+        <a href="mailto:youremail@gmail.com">Youremail@gmail.com</a>
+        <a href="tel:1234567890">1234567890</a>
+    </div>
+  </div>
+</div>
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="logo-col">
+        <a href="#" class="footer-logo">
+          <img class="logo" alt="Omnifood logo" src="img/GLogo.png" />
+        </a>
+
+        <p class="copyright">
+          Copyright &copy; 2025 by GGraphicDesign. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+</main>
 </body>
 </html>
-
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
